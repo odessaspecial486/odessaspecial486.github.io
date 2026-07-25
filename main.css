@@ -1498,3 +1498,81 @@ svg {
     width: min(770px, 100%);
   }
 }
+
+
+/* ===== Final Responsive and Contact Layout Fixes ===== */
+
+/* Desktop contact section: left information + right form */
+@media screen and (min-width: 1100px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+    padding: 100px 40px;
+  }
+
+  .contact .contact_tle {
+    width: 465px;
+    max-width: 465px;
+    margin-right: 0;
+    text-align: left;
+    position: relative;
+    top: 0;
+  }
+
+  .contact .form {
+    width: 660px;
+    max-width: 660px;
+    height: 500px;
+    margin: 0;
+  }
+
+  .contact-details {
+    align-items: flex-start;
+  }
+
+  .contact-item {
+    justify-content: flex-start;
+  }
+}
+
+/* Tablet and mobile contact stacking */
+@media screen and (max-width: 1099px) {
+  .contact {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .contact .contact_tle,
+  .contact .form {
+    max-width: 100%;
+  }
+}
+
+/* Better About section sizing */
+@media screen and (min-width: 768px) {
+  .about .aboutArticle {
+    width: 100%;
+    min-height: 360px;
+    height: auto;
+  }
+
+  .about .aboutArticle p {
+    max-width: 770px;
+    width: calc(100% - 80px);
+  }
+}
+
+/* Prevent horizontal overflow on all devices */
+body {
+  overflow-x: hidden;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
