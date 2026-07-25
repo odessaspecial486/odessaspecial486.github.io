@@ -1217,3 +1217,232 @@ html {
     justify-content: flex-start;
   }
 }
+
+/* Responsive layout correction */
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+.header .navSec {
+  padding-inline: 16px;
+}
+
+.banner {
+  min-height: 650px;
+  height: auto;
+  padding: 70px 16px 40px;
+  gap: 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner .headline,
+.banner .article,
+.banner .scroll {
+  width: 100%;
+  max-width: 920px;
+}
+
+.banner .headline {
+  height: auto;
+}
+
+.banner .headline h1 {
+  font-size: clamp(32px, 9vw, 40px);
+  line-height: 1.3;
+}
+
+.banner .article {
+  width: min(100%, 620px);
+  height: auto;
+}
+
+.banner .article p {
+  width: 100%;
+  font-size: clamp(17px, 4.8vw, 20px);
+}
+
+.socialMedia {
+  width: min(250px, 100%);
+}
+
+.works .title,
+.projects .card,
+.about .aboutArticle,
+.expertise .skillCard,
+.education-card,
+.contact .contact_tle,
+.contact .form {
+  max-width: calc(100% - 32px);
+}
+
+.works .title {
+  width: 325px;
+}
+
+.works .projects {
+  padding-inline: 16px;
+}
+
+.projects .card {
+  width: 325px;
+  height: auto;
+  min-height: 475px;
+}
+
+.card .details {
+  height: auto;
+  min-height: 218px;
+}
+
+.about .aboutArticle {
+  width: 350px;
+  height: auto;
+  min-height: 390px;
+  padding: 24px 14px;
+}
+
+.about .expertise {
+  width: 100%;
+  padding-inline: 16px;
+}
+
+.expertise .skillCard {
+  width: 325px;
+  height: auto;
+  min-height: 350px;
+  padding: 20px;
+}
+
+.education-card {
+  width: 325px;
+}
+
+.contact {
+  padding-inline: 16px;
+}
+
+.contact .contact_tle {
+  width: 327px;
+}
+
+.contact .form {
+  width: 325px;
+}
+
+.modal {
+  width: min(315px, calc(100% - 24px));
+  max-height: calc(100vh - 24px);
+}
+
+@media screen and (max-width: 767px) {
+  .header .navSec {
+    justify-content: space-between;
+  }
+
+  .navigation {
+    max-width: 100vw;
+  }
+
+  .header .navSec nav .navigation .nav-item {
+    width: calc(100% - 32px);
+    margin-left: 24px;
+  }
+
+  .banner .headline {
+    top: 0;
+  }
+
+  .banner > .socialMedia {
+    top: 0;
+  }
+
+  .contact .contact_tle {
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .navSec {
+    padding-inline: 32px;
+  }
+
+  .banner {
+    min-height: 900px;
+    height: auto;
+    padding: 150px 32px 90px;
+    background-size: cover;
+  }
+
+  .banner .headline,
+  .banner .article,
+  .banner .scroll {
+    width: min(920px, calc(100% - 32px));
+  }
+
+  .banner .article {
+    width: min(920px, calc(100% - 64px));
+  }
+
+  .works .projects {
+    width: 100%;
+    padding-inline: 24px;
+  }
+
+  .projects .card {
+    width: min(370px, calc(100vw - 64px));
+  }
+
+  .about .aboutArticle p {
+    width: min(770px, calc(100% - 64px));
+  }
+
+  .about .expertise {
+    padding-inline: 24px;
+  }
+
+  .education-card {
+    width: min(920px, calc(100% - 64px));
+  }
+
+  .contact {
+    min-height: 880px;
+    height: auto;
+    padding: 90px 32px;
+    gap: 40px;
+  }
+
+  .contact .contact_tle {
+    width: min(465px, calc(100% - 32px));
+    margin-right: 0;
+  }
+
+  .contact .form {
+    width: min(660px, calc(100% - 32px));
+  }
+
+  .modal {
+    width: min(920px, calc(100% - 48px));
+    height: min(700px, calc(100vh - 48px));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact .contact_tle {
+    margin-right: 50px;
+  }
+}
