@@ -1446,3 +1446,55 @@ svg {
     margin-right: 50px;
   }
 }
+
+/* About section desktop/tablet correction
+   Keep the original illustrated design while preventing the later mobile-width
+   rule from overriding the desktop layout. */
+@media screen and (min-width: 768px) {
+  .about {
+    overflow: hidden;
+  }
+
+  .about .aboutArticle {
+    width: 100%;
+    max-width: none;
+    min-height: 360px;
+    height: auto;
+    padding: 56px 32px 48px;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .about .aboutArticle h2,
+  .about .aboutArticle p,
+  .about .aboutArticle .btm {
+    position: relative;
+    z-index: 1;
+  }
+
+  .about .aboutArticle p {
+    width: min(770px, calc(100% - 64px));
+    max-width: 770px;
+    margin-inline: auto;
+  }
+}
+
+/* On tablets the desktop corner illustration would sit beneath the text.
+   Hide only that small lower illustration; the main About artwork remains. */
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+  .about .aboutArticle {
+    background-image: none;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .about .aboutArticle {
+    min-height: 330px;
+    padding-inline: 260px;
+    background-size: 237px 131px;
+  }
+
+  .about .aboutArticle p {
+    width: min(770px, 100%);
+  }
+}
